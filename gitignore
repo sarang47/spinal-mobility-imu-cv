@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MediaPipe models (large)
+*.task
+
+# Videos (keep locally / Kaggle / Drive)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Large data
+data/raw/*
+!data/raw/.gitkeep
+data/sample/*
+!data/sample/.gitkeep
+
+# Outputs
+results/*
+!results/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Env
+.env
+.venv/
+venv/
