@@ -21,6 +21,9 @@ This repository contains MediaPipe pose-estimation pipelines for clinical functi
 - Time-series smoothing and peak detection
 - Annotated output videos
 - CSV + summary metrics export
+- Balance analysis: ML max, range, path length, mean velocity, demeaned RMS, and 95% confidence ellipse
+- Stand-and-Reach: peak shoulder flexion angle, relative reach distance, and trial-level status
+- Put-on-Socks: peak hip, knee, and trunk flexion angles across repeated trials
 
 ## Project Structure
 ```text
