@@ -1,0 +1,49 @@
+=================================================================
+OVERALL ML METRICS (includes transitions)
+=================================================================
+max_ml_displacement_cm                  : 4.29
+ml_sway_range_cm                        : 8.57
+ml_path_length_cm                       : 17.37
+rms_ml_cm                               : 3.21
+ellipse_area_95_cm2                     : 79.82
+mean_ml_velocity_cm_s                   : 0.57
+peak_ml_velocity_cm_s                   : 153.71
+peak_ml_velocity_filtered_cm_s          : 15.97
+duration_s                              : 30.53
+valid_frames                            : 917
+unit                                    : cm / cm²
+note                                    : Overall metrics still include transitions; use per-stance for clean values.
+
+=================================================================
+PER-STANCE METRICS (first 1.5s of each stance removed)
+=================================================================
+
+Initial_Position
+  Time              : 1.5s → 9.97s  (8.47s)
+  Max ML            : 1.54 cm
+  ML Range          : 0.55 cm
+  Path length       : 1.43 cm
+  RMS (demeaned)    : 0.17 cm   ← use this
+  RMS (raw)         : 1.28 cm
+  95% Ellipse       : 1.69 cm²
+  Mean vel          : 0.17 cm/s
+
+Semi_tandem
+  Time              : 11.5s → 19.97s  (8.47s)
+  Max ML            : 4.28 cm
+  ML Range          : 0.75 cm
+  Path length       : 1.7 cm
+  RMS (demeaned)    : 0.25 cm   ← use this
+  RMS (raw)         : 3.83 cm
+  95% Ellipse       : 0.88 cm²
+  Mean vel          : 0.2 cm/s
+
+Full_tandem
+  Time              : 21.5s → 30.53s  (9.03s)
+  Max ML            : 4.29 cm
+  ML Range          : 0.69 cm
+  Path length       : 2.43 cm
+  RMS (demeaned)    : 0.2 cm   ← use this
+  RMS (raw)         : 3.91 cm
+  95% Ellipse       : 1.78 cm²
+  Mean vel          : 0.27 cm/s
