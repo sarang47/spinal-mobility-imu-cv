@@ -24,7 +24,8 @@ This repository contains MediaPipe pose-estimation pipelines for clinical functi
 - Balance analysis: ML max, range, path length, mean velocity, demeaned RMS, and 95% confidence ellipse
 - Stand-and-Reach: peak shoulder flexion angle, relative reach distance, and trial-level status
 - Put-on-Socks: peak hip, knee, and trunk flexion angles across repeated trials
-- Pilot comparison (1 healthy adult): 30s chair stand camera vs Qualisys — stand count matched (10/10); mean cycle-time difference 0.06 s; stand-timing MAE 0.06 s; hip ROM within 1.9 deg of the near side, knee ROM within 0.9 deg of the left side
+## Pilot comparison
+- 30s chair stand, camera vs Qualisys (1 healthy adult): stand count matched (10/10); mean cycle-time difference 0.06 s; stand-timing MAE 0.06 s; hip ROM within 1.9 deg of the near side, knee ROM within 0.9 deg of the left side
 
 ## Project Structure
 ```text
