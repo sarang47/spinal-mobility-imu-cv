@@ -1,0 +1,32 @@
+============================================================
+30s CHAIR STAND – POSE2SIM vs QUALISYS (PILOT)
+============================================================
+Setting         : Qualisys familiarization workshop
+Participant     : 1 healthy adult
+Modalities      : Smartphone camera (Pose2Sim) vs Qualisys + QTM
+Metric          : Peak shoulder / hip angle per stand
+Note            : Single-session pilot, not a validation study
+
+PER-STAND COMPARISON (POSE2SIM vs QUALISYS)
+  Stand  Qualisys Peak  Camera Peak  Diff   ICC    RMSE   MAE
+  1      116.4          119.7        3.3    0.994  3.65   3.16
+  2      117.8          119.3        1.5    0.994  3.47   3.08
+  3      118.6          119.7        1.2    0.990  3.74   3.00
+  4       99.0          104.3        5.3    0.991  4.17   3.92
+  5      115.5          117.6        2.1    0.990  4.41   3.63
+  6      118.3          119.8        1.5    0.991  4.18   3.69
+  7      107.2          113.9        6.7    0.991  5.02   4.69
+  8       90.9           95.9        4.9    0.987  4.01   3.64
+  9       88.1           94.5        6.4    0.997  4.07   3.67
+  Mean   108.0          111.6        3.7    0.992  4.08   3.61
+
+POSE2SIM vs MEDIAPIPE (same session, hip angle)
+  Metric                  Pose2Sim     MediaPipe    Remarks
+  Mean ICC                0.992        0.985        Pose2Sim higher
+  Mean RMSE               4.08 deg     6.23 deg     Pose2Sim lower
+  Mean MAE                3.61 deg     5.54 deg     Pose2Sim lower
+  Mean peak difference    +3.7 deg     -5.9 deg     Opposite bias
+  Stands detected         9            10           MediaPipe higher count
+  Shape agreement         Excellent    Very good    Pose2Sim stronger
+
+============================================================
