@@ -26,6 +26,7 @@ This repository contains MediaPipe pose-estimation pipelines for clinical functi
 - Put-on-Socks: peak hip, knee, and trunk flexion angles across repeated trials
 ## Pilot comparison
 - 30s chair stand, camera vs Qualisys (1 healthy adult): stand count matched (10/10); mean cycle-time difference 0.06 s; stand-timing MAE 0.06 s; hip ROM within 1.9 deg of the near side, knee ROM within 0.9 deg of the left side
+- Pose2Sim vs Qualisys (same session): mean ICC 0.992, mean RMSE 4.08 deg, mean MAE 3.61 deg on peak shoulder/hip angle; Pose2Sim showed lower error than MediaPipe on the same metric 
 
 ## Project Structure
 ```text
