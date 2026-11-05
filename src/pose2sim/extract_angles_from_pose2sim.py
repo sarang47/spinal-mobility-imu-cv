@@ -4,8 +4,9 @@ import pandas as pd
 from pathlib import Path
 
 # Correct path — JSONs are inside cam1_json
-pose_dir = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials\pose\cam1_json")
-output_csv = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials\pose2sim_2d_angles.csv")
+base = Path(__file__).parent.parent.parent  # or set manually
+pose_dir = base / "data" / "sample" / "pose" / "cam1_json"
+output_csv = base / "results" / "sample_outputs" / "pose2sim_2d_angles.csv"
 
 # COCO keypoint indices (Body model)
 L_HIP, L_KNEE, L_ANKLE = 11, 13, 15
