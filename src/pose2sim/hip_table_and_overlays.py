@@ -7,10 +7,11 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 import matplotlib.pyplot as plt
 
 # Paths
-qualisys_path = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials\STS_Hip_(L)_Angle.txt")
-camera_path = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials\pose2sim_2d_angles.csv")
-output_table = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials\hip_full_comparison_table.csv")
-plot_path = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials\hip_ascent_to_descent_overlay.png")
+base = Path(__file__).parent.parent.parent  # or set manually
+qualisys_path = base / "data" / "sample" / "STS_Hip_(L)_Angle.txt"
+camera_path = base / "data" / "sample" / "pose2sim_2d_angles.csv"
+output_table = base / "results" / "sample_outputs" / "hip_full_comparison_table.csv"
+plot_path = base / "results" / "sample_outputs" / "hip_ascent_to_descent_overlay.png"
 
 # Load Qualisys
 q_lines = qualisys_path.read_text().splitlines()
