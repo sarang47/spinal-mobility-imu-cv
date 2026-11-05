@@ -5,6 +5,7 @@ Camera-based quantification of spinal and functional mobility for Axial Spondylo
 This repository contains MediaPipe pose-estimation pipelines for clinical functional tests commonly used in AxSpA assessment (related to SPPB, ASPI, and BASMI/BASFI style metrics).
 
 ## Tests Implemented
+
 - Balance / stance analysis (mediolateral sway)
 - Stand-and-Reach
 - Put-on-Socks
@@ -16,6 +17,7 @@ This repository contains MediaPipe pose-estimation pipelines for clinical functi
 - 30-second Chair Stand
 
 ## Features
+
 - MediaPipe Pose Landmarker (VIDEO mode)
 - Joint and spinal angle calculation
 - Time-series smoothing and peak detection
@@ -24,15 +26,20 @@ This repository contains MediaPipe pose-estimation pipelines for clinical functi
 - Balance analysis: ML max, range, path length, mean velocity, demeaned RMS, and 95% confidence ellipse
 - Stand-and-Reach: peak shoulder flexion angle, relative reach distance, and trial-level status
 - Put-on-Socks: peak hip, knee, and trunk flexion angles across repeated trials
+
 ## Pilot comparison
+
 - 30s chair stand, camera vs Qualisys (1 healthy adult): stand count matched (10/10); mean cycle-time difference 0.06 s; stand-timing MAE 0.06 s; hip ROM within 1.9 deg of the near side, knee ROM within 0.9 deg of the left side
-- Pose2Sim vs Qualisys (same session): mean ICC 0.992, mean RMSE 4.08 deg, mean MAE 3.61 deg on peak shoulder/hip angle; Pose2Sim showed lower error than MediaPipe on the same metric 
+- Pose2Sim vs Qualisys (same session): mean ICC 0.992, mean RMSE 4.08 deg, mean MAE 3.61 deg on peak shoulder/hip angle; Pose2Sim showed lower error than MediaPipe on the same metric
 
 ## Project Structure
+
 ```text
 spinal-mobility-imu-cv/
-├── notebooks/               # Main analysis notebooks
-├── src/vision/              # Shared pose utilities
+├── notebooks/               # MediaPipe analysis notebooks
+├── src/
+│   ├── vision/              # Shared MediaPipe pose utilities
+│   └── pose2sim/            # Local Pose2Sim scripts (desktop run)
 ├── data/sample/             # Sample inputs (small files only)
 ├── results/sample_outputs/  # Example outputs
 ├── requirements.txt
