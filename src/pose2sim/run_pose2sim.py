@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 # Project folder (where your video is)
-project_dir = Path(r"C:\Users\asd\Desktop\2nd_October_Qualisys_Trials")
+project_dir = Path(__file__).parent.parent.parent  # or a relative path you control
 
 # Create videos subfolder and copy/move video if needed
 videos_dir = project_dir / "videos"
